@@ -5,7 +5,7 @@
 Import-Module Microsoft.Graph.Beta.Devicemanagement
 Import-Module Microsoft.Graph.Beta.Users
 
-Connect-MgGraph -Scopes "User.Read.All" -NoWelcome
+Connect-MgGraph -Scopes "User.Read.All", "DeviceManagementManagedDevices.Read.All" -NoWelcome
 
 Write-Output ""
 Write-Output "This script allows you to find the last logged on user of an Intune-joined device using the device's hostname."
